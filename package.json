@@ -1,0 +1,49 @@
+{
+  "name": "@orvix-id/pi",
+  "version": "0.1.0",
+  "description": "Pi extension for the Orvix Coding Plan",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "orvix",
+    "orvix-coding",
+    "coding-plan"
+  ],
+  "homepage": "https://github.com/Orvix-id/pi-plugin#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Orvix-id/pi-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Orvix-id/pi-plugin/issues"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "check": "bun run typecheck && bun test",
+    "probe": "bun scripts/cache-probe.ts"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^1.0.0",
+    "@types/bun": "latest",
+    "typescript": "^5.9.3"
+  }
+}
