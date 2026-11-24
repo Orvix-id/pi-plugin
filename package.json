@@ -1,6 +1,6 @@
 {
   "name": "@orvix-id/pi",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Pi extension for the Orvix Coding Plan",
   "type": "module",
   "license": "MIT",

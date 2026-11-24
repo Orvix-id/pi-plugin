@@ -19,7 +19,7 @@ test("model config strips the prefix and maps thinking levels", () => {
   const ds = thinkingLevelMap(KNOWN_MODELS["deepseek-v4-pro"]!.efforts!);
   expect(ds.medium).toBeNull();
   expect(ds.high).toBe("high");
-  const flash = toModelConfig("orvix/glm-5.3-flash") as any;
+  const flash = toModelConfig("orvix/deepseek-v4-flash") as any;
   expect(flash.reasoning).toBe(false);
   expect(flash.thinkingLevelMap).toBeUndefined();
 });
